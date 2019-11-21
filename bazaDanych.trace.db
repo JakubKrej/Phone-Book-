@@ -1,0 +1,4 @@
+2019-11-18 20:13:37 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "SELECT * FORM[*] KSIAZKA_TELEFONICZNA "
+Syntax error in SQL statement "SELECT * FORM[*] KSIAZKA_TELEFONICZNA "; SQL statement:
+select * form KSIAZKA_TELEFONICZNA [42000-199]

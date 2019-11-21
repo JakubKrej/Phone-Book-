@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:c="http://www.w3.org/1999/XSL/Transform">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodawanie do książki telefonicznej</title>
+    <link rel="stylesheet" type="text/css" href="/css/addStyle.css">
+
+</head>
+<body>
+
+<form action="http://localhost:8080/add"  >
+    <table class="table1">
+        <tr>
+            <td class="label1">Podaj imię </td>
+            <td><input name="imie" required></td>
+        </tr>
+        <tr>
+            <td class="label2">Podaj nazwisko</td>
+            <td> <input name="nazwisko" required> </td>
+        </tr>
+        <tr>
+            <td class="label3">    Podaj telefon</td>
+            <td><input name="telefon" required></td>
+        </tr>
+        <tr>
+            <td class="label4">     Podaj email    </td>
+            <td><input name="email" required></td>
+        </tr>
+        <tr>
+            <td class="label5">Podaj opis</td>
+            <td><input name="opis" required></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input type="submit"></td>
+        </tr>
+        
+
+    </table>
+</form>
+<input type="button" value="Lista kontaktów" onclick="window.location.href='http://localhost:8080/phoneBook'">
+</body>
+</html>

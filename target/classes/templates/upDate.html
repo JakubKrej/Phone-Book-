@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org ">
+<head lang="pl">
+
+        <meta charset="UTF-8">
+        <title>Aktualizuj</title>
+    </head>
+<body>
+<form th:action="@{/upDate}" th:object="${osoba}" action="/action_page.php">
+
+    <table>
+        <tr>
+            <td>Podaj imię</td>
+            <input type="text" name="imie" th:field="*{imie}" required>
+
+        </tr>
+        <tr>
+            <td>Podaj nazwisko</td>
+            <td><input name="nazwisko" th:field="*{nazwisko}" required></td>
+        </tr>
+        <tr>
+            <td> Podaj telefon</td>
+            <td><input name="telefon" th:field="*{telefon}" required></td>
+        </tr>
+        <tr>
+            <td> Podaj email</td>
+            <td><input name="email" th:field="*{email}" required></td>
+        </tr>
+        <tr>
+            <td> Podaj opis</td>
+            <td><input name="opis" th:field="*{opis}">
+                <input type="hidden" name="id" th:field="*{id}"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org ">
+<head lang="pl">
+
+        <meta charset="UTF-8">
+        <title>Title</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
+
+    <style type="text/css">
+    input[name="button4"]{
+
+        color: #8B0000;
+       border: 5px solid #8B0000;
+       border-size: 100;
+       background: white;
+       padding: 10px 15px;
+       font-weight: 1000;
+       font-size: 16px;
+       font-family: 'Hammersmith One', sans-serif;
+       border-radius: 10px;
+       display: block;
+       margin: 0 auto;
+       position: relative; bottom: -50px;
+        }
+
+        input[name="button3"]{
+
+        color: #8B0000;
+       border: 5px solid #8B0000;
+       border-size: 100;
+       background: white;
+       padding: 10px 15px;
+       font-weight: 1000;
+       font-size: 16px;
+       font-family: 'Hammersmith One', sans-serif;
+       border-radius: 10px;
+       display: block;
+       margin: 0 auto;
+       position: relative; bottom: -30px;
+        }
+
+    </style>
+
+    </head>
+<body>
+<p align="center">
+<h2 align="center">Książka telefoniczna</h2></p> <br>
+
+<table  class="table table-striped">
+    <tr>
+        <th>Imię</th>
+        <th>Nazwisko</th>
+        <th>Telefon</th>
+        <th>e-mail</th>
+        <th>Opis</th>
+
+    </tr>
+
+    <tr th:each="wpis: ${osoba}">
+        <td th:text="${wpis.imie}">Imię</td>
+        <td th:text="${wpis.nazwisko}">Nazwisko</td>
+        <td th:text="${wpis.telefon}">Telefon</td>
+        <td th:text="${wpis.email}">e-mail</td>
+        <td th:text="${wpis.opis}">Opis</td>
+
+
+
+        <td>
+            <a th:href="@{/delete(id=${wpis.id})}" class="btn btn-danger" href="#">
+
+                <i class="fa fa-trash-o" aria-hidden="false"></i> Delete</a>
+
+
+        <td>
+            <a href="#" th:href="@{/changeDate(id=${wpis.id})}" class="btn btn-primary" >
+
+                <i class="fa fa-trash-o fa-lg"></i>Aktualizuj</a></td>
+
+
+
+    </tr>
+
+</table>
+
+<table class="table table-striped">
+    <tr>
+        <td> Wyszukaj osoby wg nazwiska</td>
+        <td>
+            <form action="http://localhost:8080/search"><input name="kryteria">
+        </td>
+        <td><input class="btn btn-secondary" type="submit"></form></td>
+
+    </tr>
+
+</table>
+
+
+
+<input name="button3" type="button" value="Dodaj Kontakt" onclick="window.location.href='http://localhost:8080/add'">
+<input name="button4" type="button" value="Strona Startowa" onclick="window.location.href='http://localhost:8080/'">
+
+</body>
+</html>
