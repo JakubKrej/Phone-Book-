@@ -5,30 +5,32 @@
 
         <meta charset="UTF-8">
         <title>Aktualizuj</title>
+        <link rel="stylesheet" type="text/css" href="/css/addStyle.css">
+
     </head>
 <body>
 <form th:action="@{/upDate}" th:object="${osoba}" action="/action_page.php">
 
-    <table>
+    <table class="table1">
         <tr>
-            <td>Podaj imię</td>
-            <input type="text" name="imie" th:field="*{imie}" required>
+            <td class="text">Podaj imię</td>
+            <td><input type="text" name="imie" th:field="*{imie}" required></td>
 
         </tr>
         <tr>
-            <td>Podaj nazwisko</td>
+            <td class="nazwisko">Podaj nazwisko</td>
             <td><input name="nazwisko" th:field="*{nazwisko}" required></td>
         </tr>
         <tr>
-            <td> Podaj telefon</td>
+            <td class="telefon"> Podaj telefon</td>
             <td><input name="telefon" th:field="*{telefon}" required></td>
         </tr>
         <tr>
-            <td> Podaj email</td>
+            <td class="email"> Podaj email</td>
             <td><input name="email" th:field="*{email}" required></td>
         </tr>
         <tr>
-            <td> Podaj opis</td>
+            <td class="opis"> Podaj opis</td>
             <td><input name="opis" th:field="*{opis}">
                 <input type="hidden" name="id" th:field="*{id}"></td>
         </tr>
@@ -38,5 +40,8 @@
         </tr>
     </table>
 </form>
+
+
+<input type="button" value="Lista kontaktów" onclick="window.location.href='http://localhost:8080/phoneBook'">
 </body>
 </html>

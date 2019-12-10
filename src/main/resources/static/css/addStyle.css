@@ -1,6 +1,6 @@
 body{
   background-image:URL("/img/tlo1.jpg");
-  background-size: 100% 300%;
+  background-size: 100%;
 }
 
 .table1 {
@@ -12,7 +12,7 @@ body{
     position: relative; bottom: -270px
 }
 
-.label1{
+.text{
 
     font-family: 'FreeMono';
     font-weight: bold;
@@ -25,7 +25,7 @@ body{
 }
 
 
-.label2{
+.nazwisko{
 
     font-family: 'FreeMono';
     font-weight: bold;
@@ -37,7 +37,7 @@ body{
     padding: 4px 25px;
 }
 
-.label3{
+.telefon{
 
     font-family: 'FreeMono';
     font-weight: bold;
@@ -49,7 +49,7 @@ body{
     padding: 4px 25px;
 }
 
-.label4{
+.email{
 
     font-family: 'FreeMono';
     font-weight: bold;
@@ -61,7 +61,7 @@ body{
     padding: 4px 25px;
 }
 
-.label5{
+.opis{
 
     font-family: 'FreeMono';
     font-weight: bold;

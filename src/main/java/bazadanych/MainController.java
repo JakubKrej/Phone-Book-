@@ -60,13 +60,13 @@ public class MainController {
         return "phonebook";
     }
 
-    @RequestMapping("/serch")
+    @RequestMapping("/search")
     public String wyszukaj(@RequestParam("kryteria") String kryteria, Model model){
 
         System.out.println(kryteria);
         model.addAttribute("osoba", osobaRepo.findAllBynazwisko(kryteria));
 
-        return "changes";
+        return "phoneBook";
     }
 
     @RequestMapping("/upDate")
@@ -81,7 +81,7 @@ public class MainController {
         Osoba osoba = new Osoba(id, imie, nazwisko, telefon, email, opis, true);
         System.out.println(osoba);
         osobaRepo.save(osoba);
-        model.addAttribute("osoba", osoba);
+        model.addAttribute("osoba",  osobaRepo.findAll());
         return "phoneBook";
     }
 
