@@ -20,6 +20,7 @@ in the technology for web application. so I chose Spring framework and created a
 * H2database
 
 ## Screenshots
+Strona startowa aplikacji.
 ![Example screenshot](./img/start.jpg)
 ![Example screenshot](./img/ksiazka.jpg)
 ![Example screenshot](./img/dodaj.jpg)
