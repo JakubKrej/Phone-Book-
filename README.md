@@ -20,9 +20,23 @@ in the technology for web application. so I chose Spring framework and created a
 * H2database
 
 ## Screenshots
-Strona startowa aplikacji.
+
+Start page application.
+
 ![Example screenshot](./img/start.jpg)
+
+List of all added by us contacts.
+
 ![Example screenshot](./img/ksiazka.jpg)
+
+Adding new contact window.
+
 ![Example screenshot](./img/dodaj.jpg)
+
+Update of exisiting contact window.
+
 ![Example screenshot](./img/aktualizuj.jpg)
+
+Search user by last name widnow.
+
 ![Example screenshot](./img/wyszukaj.jpg)
